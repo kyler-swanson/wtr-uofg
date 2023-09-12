@@ -1,375 +1,335 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-            integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        />
-        <link rel="stylesheet" href="https://unpkg.com/mvp.css" />
-        <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css" />
+    <link rel="stylesheet" href="styles.css" />
 
-        <title>Work Term Report - D2L</title>
-    </head>
-    <body>
-        <header>
-            <img src="img/d2l.png" alt="" width="200" />
-            <br />
-            <p>W23 - S23 Work Term Report</p>
+    <title>Work Term Report - D2L</title>
+  </head>
+  <body>
+    <header>
+      <img src="img/d2l.png" alt="" width="200" />
+      <br />
+      <p>W23 - S23 Work Term Report</p>
 
-            <br />
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#about">About D2L</a>
-                    </li>
-                    <li>
-                        <a href="#job-desc">Job Description</a>
-                        <ul>
-                            <li>
-                                <a href="#standup">Daily Standup</a>
-                            </li>
-                            <li>
-                                <a href="#wellca-paypal"
-                                    >Well.ca PayPal Integration</a
-                                >
-                            </li>
-                            <li>
-                                <a href="#wellca-m1">
-                                    Vagrant-to-Docker Conversion
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#wellca-giftboxes">
-                                    Well.ca Gift Boxes
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#goals">Goals</a>
-                    </li>
-                    <li>
-                        <a href="#conclusion">Conclusion</a>
-                    </li>
-                    <li>
-                        <a href="#acknowledgements">Acknowledgements</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <article>
-                <h2>
-                    <u>Introduction</u>
-                </h2>
-                <p>
-                    From January 2023 to August 2023, I had the opportunity to
-                    work at <a href="https://d2l.com">D2L</a>!
-                    Specifically, I worked on a subsidiary of the Foundation 
-                    team, called team "Squidward". Throughout these 8 months, 
-                    I learned a lot about software engineering, including low level
-                    development that effects all other developers at the company. 
-                    This position was remote, so I had the opportunity to work from home. Our team 
-                    hosted a few events at the downtown Toronto office, where I had the opportunity 
-                    to meet the rest of the team!
-                </p>
-            </article>
-            <hr />
-            <article id="about">
-                <h2>
-                    <u>About D2L</u>
-                </h2>
-                <p>
-                    D2L's main product is called Brightspace. It's used at many school boards
-                    and educational institutions around the world. A small list of
-                    their clients include Purdue, University of Arizona, eLearning Ontario, 
-                    McMaster University, Western University, and the University of Guelph!. 
-                    D2L's headquarters are in Waterloo, Ontario and they have satellite offices 
-                    all over the world, including Toronto, Vancouver, London, Melbourne, among others.
-                    D2L is a large company with over 1000 employees!
-                </p>
-                <p>
-                    At a high-level, D2L is a SaaS company. They provide a
-                    custom learning platform to not only schools, but also
-                    businesses. The platform is used to create and deliver
-                    content, track student progress, and more. The platform is
-                    used by millions of users around the world.
-                </p>
-                <p>
-
-                </p>
-                <div class="center">
-                    <img src="img/brightspace.png" alt="Brightspace Logo" width="400" />
-                </div>
-            </article>
-            <hr />
-            <article id="job-desc">
-                <h2>
-                    <u>--------Job Description</u>
-                </h2>
-                <p>
-                    I decided to return to Tulip after working 8 months in 2021.
-                    I'm glad I did as I learned a lot and accomplished more than I 
-                    had imagined. I worked on many features; these
-                    contributions consisted of small and large features across
-                    10+ repositories. The tech-stack included PHP (CodeIgniter),
-                    JavaScript, ExtJS, MySQL, Apache Solr, beanstalkd.
-                    Additionally, I worked directly with business stakeholders
-                    and external vendors allowing ideas to flow freely; this was
-                    particularly important when I was working on the PayPal
-                    integration project.
-                </p>
-                <p>
-                    Below, I list some significant changes that benefitted me as
-                    a developer, further expanding my skill set.
-                </p>
-                <section id="standup"></section>
-                <h3>Daily Standup</h3>
-                <p>
-                    On a daily cadence, our team would meet virtually at 10:00am
-                    to hold a scrum/standup. Here, each team member would
-                    discuss three points of information:
-                </p>
-                <ol>
-                    <li>What we worked on the work-day prior</li>
-                    <li>What we are going to work on today</li>
-                    <li>What, if anything, is blocking our work?</li>
-                </ol>
-                <div class="center">
-                    <img src="img/standup.jpeg" alt="" width="800" />
-                </div>
-                <p>
-                    In order to organize my work and thoughts prior to our
-                    standup, I used an app called
-                    <a href="https://notion.so">Notion</a>. In Notion, I
-                    utilized the Kanban-style board feature. For each task, I
-                    would create a card and sort it Trello-style with columns
-                    such as To-do, Blocked, Working on, Ready for Deployment, and
-                    Complete. This way, I can keep track of work that needs to
-                    be done and work completed. If I get stuck on something, it
-                    goes to the Blocked column. This proved to be largely
-                    beneficial to my morning standup fluency and transparency. I
-                    also added a flag on each card to indicate which project it
-                    was related to.
-                </p>
-                <figure>
-                    <img src="img/notion.jpg" alt="" />
-                    <figcaption>
-                        <i>Notion Kanban board created by me</i>
-                    </figcaption>
-                </figure>
-                <section id="wellca-paypal"></section>
-                <h3>PayPal Integration Project</h3>
-                <p>
-                    During my time at Tulip, I have had the opportunity to work
-                    on a plethora of interesting and challenging problems. One
-                    highlight of my work term has been the PayPal integration project.
-                    This project involved integrating PayPal into Well.ca's checkout flow.
-                    The project was a large undertaking, and I was able to work on it from start to finish.
-                    I worked with the business stakeholders to understand the requirements and 
-                    then worked with the external vendor to implement the integration. 
-                </p>
-                <p>
-                    Since Well.ca receives thousands of orders per day, it was important to ensure that the
-                    integration was robust and reliable. I worked with the business stakeholders to ensure that
-                    the integration was tested thoroughly. I also worked with the external vendor to ensure that
-                    the integration was verified on their end.
-                </p>
-                <div class="center">
-                    <figure>
-                        <img src="img/paypal.jpg" alt="" width="200" />
-                        <figcaption>
-                            <i>PayPal Logo, paypal.com</i>
-                        </figcaption>
-                    </figure>
-                </div>
-                <br>
-                <section id="wellca-m1"></section>
-                <h3>Vagrant-to-Docker Conversion</h3>
-                <p>
-                    When me and the other co-op students received our Tulip equipment,
-                    we realized that they are the new M1 Macs. This meant that we could not
-                    use Vagrant to run our development environment as it utilized VirtualBox. 
-                    VirtualBox is not supported on M1 machines and therefore, we had to find a new solution.
-                </p>
-                <p>
-                    I worked with the other co-op students to convert our Vagrant environment to Docker.
-                    This was a large undertaking as I had to split up the monolithic single virtual machine
-                    into a multi-container environment. I also had to ensure that the environment was 
-                    compatible with the version of PHP that Well.ca is using. This proved to be a challenge
-                    as the PHP version was quite old. It was difficult to find a PHP Docker image that would
-                    work with the M1 architecture
-                </p>
-                <p>
-                    This opportunity also allowed me to write meaningful documentation that would help future
-                    employees. I wrote a guide on how to set up the development environment and how to use it.
-                    This documentation was written in Markdown and hosted on Atlassian Confluence.
-                </p>
-                <div class="center">
-                    <figure>
-                        <img src="img/vagrant.png" alt="" height="250" />
-                        <figcaption>
-                            <i>Vagrant logo, wikipedia.org</i>
-                        </figcaption>
-                    </figure>
-                    <figure>
-                        <img
-                            src="img/docker.webp"
-                            alt=""
-                            height="250"
-                        />
-                        <figcaption>
-                            <i>Docker logo, docker.com</i>
-                        </figcaption>
-                    </figure>
-                    <figure>
-                        <img
-                            src="img/php.png"
-                            alt=""
-                            height="250"
-                        />
-                        <figcaption>
-                            <i>PHP logo, wikipedia.org</i>
-                        </figcaption>
-                    </figure>
-                </div>
-                <br>
-                <section id="wellca-giftboxes"></section>
-                <h3>Gift Boxes</h3>
-                <p>
-                    Lastly, I worked on a customer facing feature that allowed customers to
-                    purchase gift boxes. From the customer's point of view, they are purchasing
-                    a preset gift box that contains a variety of products. From the fulfillment
-                    and business point of view, they are selling multiple products that is wrapped
-                    in a gift box. This was a challenging feature to work on as it involved
-                    a lot of business logic and required a lot of testing.
-                </p>
-            </article>
-            <hr />
-            <article id="goals">
-                <h2>
-                    <u>Goals and Outcomes</u>
-                </h2>
-                <h3>Work Term Learning Goals</h3>
-                <ol>
-                    <li>
-                        <b>Personal Goal</b>: This term, I would like to improve my 
-                        technical writing skills. From the get-go I am tasked with 
-                        getting a legacy codebase up-and-running on new M1/Apple Silicon-based 
-                        machines in a Docker environment. To make this process accessible 
-                        (once I leave), I will need to write documentation highlighting this process.
-                        Doing this will improve my technical writing skills. I will be able to 
-                        measure my success based on the feedback received on the piece I will write.
-                        <ul>
-                            <li>
-                                <b>Goal Reflection</b>: Overall, I would consider this a success.
-                                I was able to port the monolithic development environment (running
-                                on a single Vagrant-based virtual machine) to a multi-container 
-                                Docker environment. I was able to write detailed documentation 
-                                highlighting the process. I received positive feedback from my
-                                manager and the team. I was able to use this documentation to
-                                help onboard two other co-op students.
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <b>Personal Goal</b>: I would like to work on a project/product with a 
-                        modern tech-stack. In my previous terms, I was working with legacy PHP 
-                        code and would like to devote some time during my term to improving my 
-                        knowledge of modern frontend and backend frameworks. I plan on getting 
-                        involved in a project within the company that uses a modern tech stack 
-                        by working with my manager to decide on tasks or tickets that need to 
-                        be completed.
-                        <ul>
-                            <li>
-                                <b>Goal Reflection</b>: Unfortunately, I was not able to work on a
-                                project that used a modern tech stack. The client needs of the main 
-                                project our team focuses on took priority.
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <b>Teamwork Goal</b>: It would be a great opportunity to be able to 
-                        plan and implement a large feature from start to finish. With talks of 
-                        PayPal being re-implemented on Well.ca, I may have the opportunity to 
-                        scope the project by breaking it into meaningful pieces, plan my 
-                        implementation, and additionally learn a lot regarding the checkout and 
-                        payment flow. Achieving this will give me a higher level understanding 
-                        of system design that is core to any e-commerce platform
-                        <ul>
-                            <li>
-                                <b>Goal Reflection</b>: This goal was a success as I was able to work
-                                and complete the PayPal integration. I started by working with the business 
-                                stakeholders to understand the requirements and then started scoping the 
-                                project. I then worked with the external vendor to ensure that the integration
-                                was working as expected.
-                            </li>
-                        </ul>
-                    </li>
-                </ol>
-            </article>
-            <hr />
-            <article id="conclusion">
-                <h2>
-                    <u>Conclusion</u>
-                </h2>
-                <p>
-                    All-in-all, this work term was a great learning experience. I was able to
-                    work on a large project that had a large impact on the company. I was able
-                    to work with a team of talented individuals and learn a lot from them. The
-                    Tulip team welcomed me back with open arms. I felt just as much a part
-                    of the team as my full-time co-workers. Considering I was well-versed in the 
-                    Tulip product prior to joining, I was able to hit the ground running. I was 
-                    able to contribute to the team from day one.
-                </p>
-            </article>
-            <hr />
-            <article id="acknowledgements">
-                <h2>
-                    <u>Acknowledgements</u>
-                </h2>
-                <p>
-                    I would like to thank my managers, Dawid and Eugene for
-                    allowing me back and mentoring me throughout my
-                    time at Tulip. They continue to set the bar so high that I am
-                    curious to know what my future work experience will offer.
-                    Additionally, the help and support from every person on my
-                    team was immensely constructive to my technical skills and
-                    soft skills.
-                </p>
-            </article>
-        </main>
-        <footer>
-            <hr />
-            <nav>
-                <p>
-                    <small>
-                        Kyler Swanson &copy;
-                        <script>
-                            document.write(new Date().getFullYear());
-                        </script>
-                    </small>
-                </p>
-                <ul>
-                    <li>
-                        <a href="https://github.com/kyler-swanson">
-                            <i class="fa fa-github-alt" aria-hidden="true"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/kyler-swanson/">
-                            <i class="fa fa-linkedin" aria-hidden="true"></i>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </footer>
-    </body>
+      <br />
+      <nav>
+        <ul>
+          <li>
+            <a href="#about">About D2L</a>
+          </li>
+          <li>
+            <a href="#job-desc">Job Description</a>
+            <ul>
+              <li>
+                <a href="#proxy">Proxy Latency Investigation</a>
+              </li>
+              <li>
+                <a href="#otel">OpenTelemetry Instrumentation</a>
+              </li>
+              <li>
+                <a href="#pinned">Pinned Attribute</a>
+              </li>
+              <li>
+                <a href="#dal">Eliminating DAL</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#goals">Goals</a>
+          </li>
+          <li>
+            <a href="#conclusion">Conclusion</a>
+          </li>
+          <li>
+            <a href="#acknowledgements">Acknowledgements</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <article>
+        <h2>
+          <u>Introduction</u>
+        </h2>
+        <p>
+          From January 2023 to August 2023, I had the opportunity to work at <a href="https://d2l.com">D2L</a>!
+          Specifically, I worked on a subsidiary of the Foundation team, called team "Squidward". Throughout these 8
+          months, I learned a lot about software engineering, including low level development that effects all other
+          developers at the company. This position was remote, so I had the opportunity to work from home. Our team
+          hosted a few events at the downtown Toronto office, where I had the opportunity to meet the rest of the team!
+        </p>
+      </article>
+      <hr />
+      <article id="about">
+        <h2>
+          <u>About D2L</u>
+        </h2>
+        <p>
+          D2L's main product is called Brightspace. It's used at many school boards and educational institutions around
+          the world. A small list of their clients include Purdue, University of Arizona, eLearning Ontario, McMaster
+          University, Western University, and the University of Guelph!. D2L's headquarters are in Waterloo, Ontario and
+          they have satellite offices all over the world, including Toronto, Vancouver, London, Melbourne, among others.
+          D2L is a large company with over 1000 employees!
+        </p>
+        <p>
+          At a high-level, D2L is a SaaS company. They provide a custom learning platform to not only schools, but also
+          businesses. The platform is used to create and deliver content, track student progress, and more. The platform
+          is used by millions of users around the world.
+        </p>
+        <p></p>
+        <div class="center">
+          <img src="img/brightspace.png" alt="Brightspace Logo" width="400" />
+        </div>
+      </article>
+      <hr />
+      <article id="job-desc">
+        <h2>
+          <u>Job Description</u>
+        </h2>
+        <p>
+          Team Squidward worked on core APIs that lay the foundation of Brightspace. These APIs are used by all other
+          teams at D2L. We worked primarily in C# using a slightly modified version of .NET Framework.
+        </p>
+        <p>
+          When I joined D2L in January, the team's focus (and focus for the last few years) was migrating the version of
+          .NET to a newer, more modern version, as well as improving the codebase overall. This was a large undertaking
+          as the codebase is quite large and has been around for many years. There are also many instances of unsafe
+          code, which cannot be directly migrated. This means that the code must be rewritten in a safe way. This is a
+          large undertaking as it requires a lot of planning and testing.
+        </p>
+        <p>
+          A large focus during my first 4 months was strategizing this migration. An integral component is the YARP
+          proxy. The proxy will allow D2L developers to support and develop the to-be legacy codebase, while being able
+          to incrementally move functionality to the new platform.
+        </p>
+        <p>Below, I list some significant changes that benefitted me as a developer, further expanding my skill set.</p>
+        <section id="proxy"></section>
+        <h3>Proxy Latency Investigation</h3>
+        <p>
+          When we were deciding if using the YARP proxy would be a good choice, we needed some concrete figures to weigh
+          against other options. I was able to subtly simulate load on an Brightspace instance behind a proxy by
+          configuring a basic JMeter stress test. The traces produced by the test were aggregated and summarized to
+          compare the overall latency incurred from adding the YARP proxy. After working on these numbers, I shifted
+          towards focusing on a more permanent solution allowing us to keep track of the overhead in real-time!
+        </p>
+        <div class="center">
+          <figure>
+            <img src="img/jmeter.png" alt="" width="200" />
+            <figcaption>
+              <i>Apache JMeter logo</i>
+            </figcaption>
+          </figure>
+        </div>
+        <section id="otel"></section>
+        <h3>OpenTelemetry Instrumentation</h3>
+        <p>
+          I added the OpenTelemetry .NET library to the new proxy server, which allows us to easily collect various
+          telemetry, including tracing, metrics, and logging. To hit the ground running, we decided to export process
+          level measurements within proxy server. These metrics are pushed to AWS Timestream via Telegraf. I also wrote
+          a custom exporter within OpenTelemetry, allowing us to push these metrics to Telegraf.
+        </p>
+        <div class="center">
+          <figure>
+            <img src="img/telegraf.png" alt="" height="100" />
+            <figcaption>
+              <i>Telegraf logo</i>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="img/timestream.png" alt="" height="100" />
+            <figcaption>
+              <i>AWS Timestream logo</i>
+            </figcaption>
+          </figure>
+        </div>
+        <br />
+        <section id="pinned"></section>
+        <h3>Pinned Attribute</h3>
+        <p>
+          Due to a defect related to dangerous serialization that was discovered when extracting libraries, we had to be
+          careful about which types we moved over.
+        </p>
+        <p>
+          Since serialized data contains indispensable type information, we couldn't just move everything we came
+          across. Some types can't be moved at all!
+        </p>
+        <p>
+          I created a "Pinned" attribute, which includes a Roslyn analyzer, forcing pinned types to stay where they are.
+        </p>
+        <div class="center">
+          <figure>
+            <img src="img/roslyn.png" alt="" height="100" />
+            <figcaption>
+              <i>Roslyn logo</i>
+            </figcaption>
+          </figure>
+        </div>
+        <br />
+        <section id="dal"></section>
+        <h3>Eliminating dynamic assembly loading</h3>
+        <h4>What is it?</h4>
+        <p>
+          Dynamic assembly loading or DAL is the process of loading external assemblies (and the types within them) into
+          the current application domain. Allows the developer access to types that are otherwise inaccessible within
+          the current domain.
+        </p>
+        <h4>The problem</h4>
+        <p>
+          While DAL is incredibly powerful to the developer, it comes with some trade-offs that threaten the possibility
+          of migration to modern .NET.
+        </p>
+        <p>DAL is heavily relied upon for de/serialization.</p>
+        <ul>
+          <li>Serialized data contains critical type info required to deserialize it.</li>
+          <li>Serialized data can persist for a significant amount of time (in the DB)</li>
+          <li>
+            If a type were to move (for example, in the <b>process of a migration</b>), the runtime will fail to
+            deserialize the data.
+          </li>
+        </ul>
+        <h4>DAL in Assigned Activities</h4>
+        <p>
+          While there were a handful of DAL eliminating initiatives that I worked on this summer, Assigned Activities
+          was a significant hurdle and milestone for myself.
+        </p>
+        <p>
+          Assigned Activities publishes a handful of tasks to Amazon SQS, which are queued to be handled asynchronously
+          at a later time.
+        </p>
+        <p>
+          When ready to process the task, we deserialize the data from SQS. This contains type name information which is
+          parsed with <code>Type.GetType()</code>
+        </p>
+        <p>
+          We decided to assign each task a unique GUID which will identify the type instead. If one of these tasks were
+          to move location, now the SQS processor would still be able to locate the type. This had to be released
+          incrementally, due to blue-green deployment rules!
+        </p>
+        <div class="center">
+          <figure>
+            <img src="img/sqs.png" alt="" height="100" />
+            <figcaption>
+              <i>AWS SQS logo</i>
+            </figcaption>
+          </figure>
+        </div>
+      </article>
+      <hr />
+      <article id="goals">
+        <h2>
+          <u>Goals and Outcomes</u>
+        </h2>
+        <h3>Work Term Learning Goals</h3>
+        <ol>
+          <li>
+            <b>Technological Literacy Goal</b>: I want to learn about modern .NET Core and the intricacies of planning
+            migrations and migrating legacy code (particularly by working on this directly). I plan on achieving this by
+            working with my manager to find a project that will allow me to work with modern .NET Core and by
+            contributing to the migration of the legacy codebase.
+            <ul>
+              <li>
+                <b>Goal Reflection</b>: Overall, I was able to achieve this goal. I was able to work with modern .NET
+                Core and contribute to the migration of the legacy codebase. I was able to work on a project that
+                involved migrating legacy code to modern .NET Core. I was able to work with my manager to find a project
+                (YARP proxy) that would allow me to work with modern .NET Core!
+              </li>
+            </ul>
+          </li>
+          <li>
+            <b>Technological Literacy Goal</b>: I want to learn more about SQL Server and the differences between that
+            and alternatives (MySQL, PostgreSQL, etc.).
+            <ul>
+              <li>
+                <b>Goal Reflection</b>: There was not much opportunity to work with SQL Server. Our team's focus was
+                more about the core APIs, which did not necessarily interact with the database (higher level).
+                Therefore, I would not say that I achieved this goal.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <b>Personal Goal</b>: I want to learn more about CI/CD particularly in the realm of dev/QA/production
+            deployments (including feature flags, db migrations, rollbacks, etc.) specifically involving our team and
+            how a large-scale migration to .NET Core might affect this.
+            <ul>
+              <li>
+                <b>Goal Reflection</b>: This goal was a success! I learned and implemented a feature flag for a new
+                feature. I also learned a lot about blue/green deployment methodology which is used at D2L.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <b>Problem Solving Goal</b>: I want to learn more about planning and coordinating medium/large scale
+            projects at a lower level (ie. taking the lead).
+            <ul>
+              <li>
+                <b>Goal Reflection</b>: I was able to achieve this goal. I was able to take the lead on implementing an
+                observability solution for the YARP proxy. I was able to work with my manager to plan and coordinate
+                this project.
+              </li>
+            </ul>
+          </li>
+        </ol>
+      </article>
+      <hr />
+      <article id="conclusion">
+        <h2>
+          <u>Conclusion</u>
+        </h2>
+        <p>
+          All-in-all, this work term was a great learning experience. I was able to work on a large project that had a
+          large impact on the company. I was able to work with a team of talented individuals and learn a lot from them.
+          I was able to work with modern .NET Core and learn about the intricacies of migrating legacy code. This term
+          has been and will be a great stepping stone for my future career. I am excited to see what the future holds!
+        </p>
+      </article>
+      <hr />
+      <article id="acknowledgements">
+        <h2>
+          <u>Acknowledgements</u>
+        </h2>
+        <p>
+          I would like to thank my manager Adnan for allowing me back for the summer and mentoring me throughout my time
+          at D2L. Additionally, the help and support from every person on my team was immensely constructive to my
+          technical skills and soft skills! I would love to return to D2L in the future!
+        </p>
+      </article>
+    </main>
+    <footer>
+      <hr />
+      <nav>
+        <p>
+          <small>
+            Kyler Swanson &copy;
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+          </small>
+        </p>
+        <ul>
+          <li>
+            <a href="https://github.com/kyler-swanson">
+              <i class="fa fa-github-alt" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/kyler-swanson/">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
 </html>
